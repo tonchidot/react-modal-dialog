@@ -53,6 +53,7 @@ export default class FlexDialog extends React.Component {
      */
     this.eventToken = EventStack.addListenable([
       [ 'click', this.handleGlobalClick ],
+      [ 'touchend', this.handleGlobalClick],
       [ 'keydown', this.handleGlobalKeydown ],
     ]);
   };
