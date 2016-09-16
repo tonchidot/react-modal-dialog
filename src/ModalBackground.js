@@ -49,7 +49,7 @@ export default class ModalBackground extends React.Component {
     const { transparent } = this.state;
 
     const overlayStyle = {
-      opacity: transparent ? 0 : 0.85,
+      opacity: 0,
       position: 'absolute',
       backgroundColor: this.props.backgroundColor,
       top: 0,
