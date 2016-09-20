@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/tonchidot/react-modal-dialog"
   },
-  "main": "index",
+  "main": "./lib/index",
   "scripts": {
     "prepublish": "npm run build",
     "start": "npm run build",
