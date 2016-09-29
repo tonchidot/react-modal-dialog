@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import dynamics from 'dynamics.js';
 import centerComponent from 'react-center-component';
 import useSheet from './useSheet';
-import CloseCircle from './CloseCircle';
+import CloseTextButton from './CloseTextButton';
 import EventStack from 'active-event-stack';
 import keycode from 'keycode';
 
@@ -20,18 +20,11 @@ import keycode from 'keycode';
   },
   'closeButton': {
     position: 'absolute',
-    top: 0,
-    left: -50,
+    bottom: 0,
+    left: 0,
     display: 'block',
-    width: 40,
-    height: 40,
-    transition: 'transform 0.1s',
-    // backgroundImage: require('../images/modal-dialog-close.png'),
-    // backgroundRepeat: 'no-repeat',
-    // backgroundSize: '40px 40px',
-    '&:hover': {
-      transform: 'scale(1.1)',
-    },
+    padding: '10px',
+    margin: '10px',
   },
 })
 // This decorator centers the dialog
@@ -176,7 +169,7 @@ export default class ModalDialog extends React.Component {
       {
         onClose ?
         <a className={classes.closeButton} onClick={onClose}>
-          <CloseCircle diameter={40}/>
+          <CloseTextButton />
         </a> :
         null
       }
