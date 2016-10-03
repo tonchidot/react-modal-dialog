@@ -1,6 +1,6 @@
 {
   "name": "tonchidot-react-modal-dialog",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A simple, idiomatic, and declarative way to launch modal dialogs in ReactJS",
   "repository": {
     "type": "git",
