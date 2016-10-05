@@ -58,6 +58,7 @@ export default class ModalBackground extends React.Component {
       width: '100%',
       transition: `opacity ${this.props.duration / 1000}s`,
       WebkitTransition: `opacity ${this.props.duration / 1000}s`,
+      cursor: 'pointer'
     };
 
     const containerStyle = {
@@ -70,7 +71,8 @@ export default class ModalBackground extends React.Component {
       width: '100%',
       transition: `opacity ${this.props.duration / 1000}s`,
       WebkitTransition: `opacity ${this.props.duration / 1000}s`,
-      backgroundColor: 'transparent'
+      backgroundColor: 'transparent',
+      cursor: 'pointer'
     };
 
     const style = {
@@ -84,7 +86,7 @@ export default class ModalBackground extends React.Component {
 
     return <div style={style}>
       <div style={overlayStyle}/>
-      <button style={containerStyle}>{this.getChild()}</button>
+      <div style={containerStyle}>{this.getChild()}</div>
     </div>;
   }
 }
