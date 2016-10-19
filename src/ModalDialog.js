@@ -164,15 +164,7 @@ export default class ModalDialog extends React.Component {
     return <div {...rest}
       ref="self"
       className={divClassName}
-      style={dialogStyle}
-    >
-      {
-        onClose ?
-        <a className={classes.closeButton} onClick={onClose}>
-          <CloseTextButton />
-        </a> :
-        null
-      }
+      style={dialogStyle}>
       {children}
     </div>;
   };
